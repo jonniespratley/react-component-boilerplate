@@ -19,7 +19,8 @@
     ]
   },
   "scripts": {
-    "start": "catalog start docs",
+    "catalog": "catalog start docs",
+    "start": "start-storybook -p 9001 -c .storybook",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
@@ -43,11 +44,12 @@
     "@pika/pack": "^0.3.1",
     "@pika/plugin-build-web": "^0.3.9",
     "@pika/plugin-standard-pkg": "^0.3.9",
+    "@storybook/react": "^4.1.11",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "catalog": "^3.6.0",
     "chai": "^4.2.0",
     "cross-env": "^5.2.0",
     "del-cli": "^1.1.0",
